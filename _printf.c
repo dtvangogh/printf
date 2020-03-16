@@ -25,10 +25,10 @@ int _printf(const char *format, ...)
 			
 			f = get_specifier(format[i]);
 			if (f == NULL) /*if no specifier*/
-				no_specifier(format[i]); 
+				bytes += no_specifier(format[i]); 
 			
 			else if (f != NULL)
-				f(ap);	
+				bytes += f(ap);	
 				
 		}
 		else if (format[i] == '%' && format[i + 1] == '\0')
