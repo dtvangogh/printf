@@ -6,7 +6,7 @@
 #include <unistd.h> 
 
 /**
- * struct relations - draws a relationship between a frmt spec and a f-ptr
+ * struct-used in get format function to find specifier function
  * @ch: the format specifier
  * @f: a pointer to a function 
  */
