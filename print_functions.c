@@ -43,20 +43,24 @@ int print_string(va_list ap)
 
 int print_integer(va_list ap)
 {
+	int count = 0; 
 	int n = va_arg(ap, int);
 	
 	if (n < 0)
 	{
 		_putchar('-');
+		count++; 
 		n = -1 * n;
 		_printchar(n);
+		count++; 
 	}
 	else
 	
 	{
 		_printchar(n); 
+		count++; 
 	}
-	return(n);
+	return(count);
 }
 int no_specifier(char after)
 {
