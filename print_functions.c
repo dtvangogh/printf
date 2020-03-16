@@ -43,9 +43,7 @@ int print_string(va_list ap)
 
 int print_integer(va_list ap)
 {
-	int negative;
 	int n = va_arg(ap, int);
-	unsigned int m;
 	
 	if (n < 0)
 	{
@@ -62,7 +60,6 @@ int print_integer(va_list ap)
 }
 int no_specifier(char after)
 {
-	char percent_sign  = '%';
 	char empty = 0;
 	
 
