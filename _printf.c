@@ -12,7 +12,6 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 	va_list ap; 
 	va_start(ap, format);
-	char percent_sign = '%';
 
 	/* loop through the format string */
 	if (format == NULL)
