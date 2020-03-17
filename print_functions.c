@@ -88,29 +88,26 @@ int no_specifier(char after)
 		return (1);
 	}
 
+
 	if (after == ' ')
 	{
 		write(1, &empty, 1);
-		return (1);
 	}
 	if (after == '\n')
 	{
 		write(1, &after, 1);
-		return (1);
 	}
 	if (isdigit(after))
 	{
 		for (i = 0; i < after - 49; i++)
 			{
 			_putchar(' ');
-			return (1);
 		}
 
 	}
 	else
 	{
 		write(1, &empty, 1);
-		return (1);
 	}
 	return (0);
 }
