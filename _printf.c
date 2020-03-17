@@ -7,7 +7,7 @@
  */
 int _printf(const char *format, ...)
 {
-	char numbers[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+/*	char numbers[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};*/
 	unsigned int bytes = 0;
 	unsigned int i = 0;
 	int (*f)(va_list);
