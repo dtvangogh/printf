@@ -49,7 +49,7 @@ int print_rot13(va_list ap)
 int _putrot13(char c)
 {
 	char *alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char *rot13 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *rot13 =    "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int index;
 
 		for (index = 0; index < 52; index++)
@@ -58,6 +58,7 @@ int _putrot13(char c)
 			{
 				c = rot13[index];
 				write(1, &c, 1);
+				break;
 			}
 		}
 	return (0);
