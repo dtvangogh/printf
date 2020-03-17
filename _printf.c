@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 
 		else if (format[i] == '%' && format[i + 1] == '\0')
 		{/*end string at  the % signand format[i]*/
-			return (1);
+			return (0);
 		}
 		else
 		{
