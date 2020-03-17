@@ -39,6 +39,8 @@ int print_string(va_list ap)
 			count++;
 		}
 	}
+	else
+		_printf("(null)");
 	return (count);
 }
 /**
@@ -94,7 +96,7 @@ int no_specifier(char after)
 	if (after == '\n')
 	{
 		write(1, &after, 1);
-		return (2);
+		return (1);
 	}
 	if (isdigit(after))
 	{
