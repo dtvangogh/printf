@@ -30,10 +30,8 @@ int _printf(const char *format, ...)
 			else if (f != NULL)
 				bytes += f(ap);
 		}
-		else if (format[i] == '%' && format[1 + 1] != numbers)
-		{
-			_putchar(' ');
-		}
+		/**else if (format[i] == '%' && format[1 + 1] != numbers)*/
+
 		else if (format[i] == '%' && format[i + 1] == '\0')
 		{/*end string at  the % signand format[i]*/
 			return (1);
