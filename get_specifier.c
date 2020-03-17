@@ -14,9 +14,11 @@ int (*get_specifier(char s))(va_list)
 		{'i', print_integer},
 		{'s', print_string},
 		{'c', print_char},
+		{'r', print_reverse},
+		{'R', print_rot13},
 		{'\0', NULL}
 	};
-	while (i < 4)
+	while (i < 6)
 	{
 		if (s == types[i].ch)
 			return (types[i].f);
