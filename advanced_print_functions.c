@@ -12,6 +12,7 @@ int print_reverse(va_list ap)
 
 	int length = 0;
 
+
 	for (i = 0; s[i] != '\0'; i++)
 		length++;
 	for (i = (length - 1); i >= 0; i--)
@@ -30,7 +31,7 @@ int print_rot13(va_list ap)
 {
 	int i = 0;
 	int count = 0;
-	char *s = va_arg(ap, char *);
+	char *s = va_arg(ap, char *);/*i should strdup?*/
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
