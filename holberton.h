@@ -1,14 +1,14 @@
 #ifndef HOLBERTONH_
 #define HOLBERTONH_
 
-#include <stdio.h>  
-#include <stdarg.h> 
-#include <unistd.h> 
+#include <stdio.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 /**
- * struct-used in get format function to find specifier function
+ * struct types -in get format function to find specifier function
  * @ch: the format specifier
- * @f: a pointer to a function 
+ * @f: a pointer to a function
  */
 typedef struct types
 {
@@ -25,4 +25,4 @@ int print_integer(va_list ap);
 int no_specifier(char);
 int _putchar(char c);
 int _printchar(int n);
-#endif 
+#endif
