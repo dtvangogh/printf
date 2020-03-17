@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * func_pick - selects a function to print out the data type
+ * get_specifier - selects a function to print out the data type
  * @s: the identifier (after the % sign)
  *
  * Return: a pointer to function
