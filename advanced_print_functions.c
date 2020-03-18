@@ -85,8 +85,8 @@ int find_binary(unsigned int n)
 		index++;
 	}
 	else if (n % 2 != 0)
-	_putchar('1');
-	index++;
+		_putchar('1');
+		index++;
 	return (index);
 }
 /**
@@ -97,8 +97,15 @@ int find_binary(unsigned int n)
  */
 int print_binary(va_list ap)
 {
+	int count = 0;
+
 	unsigned int n = va_arg(ap, int);
 
 	find_binary(n);
-	return (0);
+	while (n != 0)
+	{
+		n = n / 10;
+		count++;
+	}
+	return (count);
 }
