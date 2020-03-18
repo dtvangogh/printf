@@ -68,17 +68,9 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     printf("----------------------------------\n");
-    len = _printf("len %d hola\n", 1323333);
-    len2 = printf("len %d hola\n", 1323333);
-    _printf("Length:[%d, %i]\n", len, len);
-    printf("Length:[%d, %i]\n", len2, len2);
     len = _printf("len %%\n");
     len2 = printf("len %%\n");
-    _printf("Length:[%d, %i]\n", len, len);
-    printf("Length:[%d, %i]\n", len2, len2);
     printf("----------------------------------\n");
-    len = _printf("len %c hola %k\n", 'z');
-    len2 = printf("len %c hola %k\n", 'z');
     len = _printf("%s\n",(char *)0);
     len2 = printf("%s\n",(char *)0);
     len = printf("123%s456\n", NULL);
