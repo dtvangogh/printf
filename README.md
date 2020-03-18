@@ -6,7 +6,7 @@ This is a printf function with the ability to print integers (%d, %i), character
  I created two files for all the formatter conversions.
  print_functions.c contains the mandatory specifiers %c, %d, %i, and %s.
 advanced_print_functions.c contains the advanced specifiers %r, %R, and %b.
-| File               | Description                              |
+| File               | Description                    |                    |
 | ------------------ | ---------------------------------------- |
 | _printf.c          | this file contains the _printf function. It uses variadic functions to accept an indefinite number of arguments.|
 
