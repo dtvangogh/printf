@@ -28,4 +28,6 @@ int _putrot13(char c);
 int no_specifier(char);
 int _putchar(char c);
 int _printchar(int n);
+int find_binary(unsigned int n);
+int print_binary(va_list ap);
 #endif
