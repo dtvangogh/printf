@@ -1,4 +1,4 @@
-i# _printf
+## _printf
 
 This is a printf function with the ability to print integers (%d, %i), characters (c), strings (s), %(%), int to binary conversions (%b), reversed strings (%r), and rot13 strings (%R).
  #### Specifier Functions
@@ -11,19 +11,12 @@ advanced_print_functions.c contains the advanced specifiers %r, %R, and %b.
 | _printf.c          | this file contains the _printf function. It uses variadic functions to accept an indefinite number of arguments.|
 | get_specifier.c    | This file contains the type structure that acts as a door to the formatter functions. It checks to see which specifier function is needed.   |
 | print_functions.c  | This file contains all the functions that are used to complete mandatory formatter functions.
-The functions included are as followed:
-print_char - prints a character.
-print_string - prints a string.
+The functions included are as followed: print_char - prints a character.print_string - prints a string.
 print_integer - prints an integer up to 10 digits.
 _printchar - uses to display each digit in an integer.
 no_specifier - used to print a string when there is no specifier.|
 |advanced_print_functions.c | This file contains type formatters for %r, %R, and %b.
-The functions included are as followed:
-print_reverse - prints a string in reverse.
-print_rot13 - prints a string with rot13 encryption.
-_putrot13 - rot13s each character individually.
-find_binary - finds the binary value of an integer.
-print_binary - prints the binary value of an integer.
+The functions included are as followed:print_reverse - prints a string in reverse.print_rot13 - prints a string with rot13 encryption._putrot13 - rot13s each character individually.find_binary - finds the binary value of an integer.print_binary - prints the binary value of an integer.
 
 
 
