@@ -1,3 +1,4 @@
+original file https://github.com/dtvangogh/printf.git
 _PRINTF(1)		GENERAL COMMANDS MANUAL		_PRINTF(1)
 
 NAME
@@ -5,12 +6,16 @@ NAME
 SYPNOSIS
 	_printf format [arguments ....]
 DESCRIPTION
-	The _printf utility formats and prints its arguments. The format is a character string that contains three types of elements: plain characters, character esacpe sequences(\n, " "), and format specifiers. This function writes output to stdout. 
+	The _printf utility formats and prints its arguments. The format is
+	 a character string that contains three types of elements: plain characters,
+	 character
+	 esacpe sequences(\n, " "), and format specifiers. This function writes output
+	 to stdout.
 
 RETURN VALUE
-_printf returns the number of characters printed, excluding the null byte). 
-If an output error is found, a negative value is returned. 
-Each format specifier is introduced by the percent character '%'. 
+_printf returns the number of characters printed, excluding the null byte).
+If an output error is found, a negative value is returned.
+Each format specifier is introduced by the percent character '%'.
 _printf can print 7 different format specifiers:
 
 %d: prints ints;
@@ -21,13 +26,18 @@ _printf can print 7 different format specifiers:
 %R: prints the string with a rot13 encryption;
 %%: prints a % sign;
 
-The arguments are used in the order they are given. An error will occur if there are more arguments than specifiers, or specifiers than arguments. 
+The arguments are used in the order they are given. An error will occur if there are more
+arguments than
+specifiers, or specifiers than arguments.
 
 If the format has a '%' percent character but no specifier:
-a '%' followed by a number will print blank empty space, including an empty space where the first '%' is found. 
-a '%' followed by an alphabetical character will also print empty space. 
+a '%' followed by a number will print blank empty space, including an empty space
+where the first '%' is found.
+a '%' followed by an alphabetical character will also print empty space.
 
-Currently, as of 3/20/2020, _printf can not print decimals, hex values, floats, or longs. 
+Currently, as of 3/20/2020, _printf can not print decimals, hex values, floats, or
+longs.
+_printf does not consider field width, precision, flags, or length modifiers.
 
 
 BUGS
