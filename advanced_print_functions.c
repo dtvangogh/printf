@@ -80,8 +80,10 @@ int find_binary(unsigned int n)
 
 	}
 	if (n % 2 == 0)
-	_putchar('0');
-	index++
+	{
+		_putchar('0');
+		index++;
+	}
 	else if (n % 2 != 0)
 	_putchar('1');
 	index++;
