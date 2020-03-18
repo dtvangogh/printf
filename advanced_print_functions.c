@@ -103,5 +103,5 @@ int print_binary(va_list ap)
 		n = n / 10;
 		count++;
 	}
-	return (count);
+	return (7);
 }
