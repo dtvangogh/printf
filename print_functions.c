@@ -126,6 +126,11 @@ int no_specifier(char after)
 		}
 
 	}
+	if (after == ']')
+	{
+		write(1, &empty, 1);
+		write(1, &after, 1);
+	}
 	else
 	{
 		write(1, &empty, 1);
