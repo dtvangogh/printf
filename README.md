@@ -16,8 +16,12 @@ advanced_print_functions.c contains the advanced specifiers %r, %R, and %b.
 |print_integer | prints an integer up to 10 digits.
 |_printchar | uses to display each digit in an integer.
 |no_specifier | used to print a string when there is no specifier.|
-|advanced_print_functions.c | This file contains type formatters for %r, %R, and %b.
-The functions included are as followed:print_reverse - prints a string in reverse.print_rot13 - prints a string with rot13 encryption._putrot13 - rot13s each character individually.find_binary - finds the binary value of an integer.print_binary - prints the binary value of an integer.
+|advanced_print_functions.c The functions included are as followed| This file contains type formatters for %r, %R, and %b.
+|print_reverse |prints a string in reverse.
+|reverse.print_rot13 | prints a string with rot13 encryption.
+|_putrot13 |rot13s each character individually.
+|find_binary | finds the binary value of an integer.
+|print_binary - prints the binary value of an integer.
 
 
 
