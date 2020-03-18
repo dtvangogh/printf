@@ -72,8 +72,6 @@ int _putrot13(char c)
  */
 int find_binary(unsigned int n)
 {
-	int index = 0;
-
 	if (n / 2 != 0)
 	{
 		find_binary(n / 2);
