@@ -24,6 +24,7 @@ _printf can print 7 different format specifiers:
 %s: prints entire strings;
 %r: reverses the string
 %R: prints the string with a rot13 encryption;
+%b: prints the binary value of an unsigned int;
 %%: prints a % sign;
 
 The arguments are used in the order they are given. An error will occur if there are more
