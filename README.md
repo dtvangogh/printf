@@ -22,7 +22,7 @@ advanced_print_functions.c contains the advanced specifiers %r, %R, and %b.
 |_putrot13 |rot13s each character individually.
 |find_binary | finds the binary value of an integer.
 |print_binary | prints the binary value of an integer.
-
+|holberton.h| header file that contains all the function calls.
 
 
 
