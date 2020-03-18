@@ -31,6 +31,8 @@ The arguments are used in the order they are given. An error will occur if there
 arguments than
 specifiers, or specifiers than arguments.
 
+If no specifier is used, _printf will print all printable characters of the argument
+as long as the characters are within "double quotes".
 If the format has a '%' percent character but no specifier:
 a '%' followed by a number will print blank empty space, including an empty space
 where the first '%' is found.
