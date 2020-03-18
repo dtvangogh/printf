@@ -6,41 +6,51 @@ NAME
 SYPNOSIS
 	_printf format [arguments ....]
 DESCRIPTION
-	The _printf utility formats and prints its arguments. The format is
+	 The _printf utility formats and prints its arguments. The format is
 	 a character string that contains three types of elements: plain characters,
-	 character
-	 esacpe sequences(\n, " "), and format specifiers. This function writes output
-	 to stdout.
+	 character esacpe sequences(\n, " "), and format specifiers. This function
+	 writes output to stdout.
 
 RETURN VALUE
-_printf returns the number of characters printed, excluding the null byte).
-If an output error is found, a negative value is returned.
-Each format specifier is introduced by the percent character '%'.
-_printf can print 7 different format specifiers:
+	_printf returns the number of characters printed, excluding the null byte).
+	If an output error is found, a negative value is returned.
+	Each format specifier is introduced by the percent character '%'.
+	_printf can print 7 different format specifiers:
 
-%d: prints ints;
-%i: prints ints;
-%c: prints the first char character;
-%s: prints entire strings;
-%r: reverses the string
-%R: prints the string with a rot13 encryption;
-%b: prints the binary value of an unsigned int;
-%%: prints a % sign;
+	%d: prints ints;
+	%i: prints ints;
+	%c: prints the first char character;
+	%s: prints entire strings;
+	%r: reverses the string
+	%R: prints the string with a rot13 encryption;
+	%b: prints the binary value of an unsigned int;
+	%%: prints a % sign;
 
-The arguments are used in the order they are given. An error will occur if there are more
-arguments than
-specifiers, or specifiers than arguments.
+	The arguments are used in the order they are given. An error will occur if there are more
+	arguments than
+	specifiers, or specifiers than arguments.
 
-If no specifier is used, _printf will print all printable characters of the argument
-as long as the characters are within "double quotes".
-If the format has a '%' percent character but no specifier:
-a '%' followed by a number will print blank empty space, including an empty space
-where the first '%' is found.
-a '%' followed by an alphabetical character will also print empty space.
+	If no specifier is used, _printf will print all printable characters of the argument
+	as long as the characters are within "double quotes".
+	If the format has a '%' percent character but no specifier:
+	a '%' followed by a number will print blank empty space, including an empty space
+	where the first '%' is found.
+	a '%' followed by an alphabetical character will also print empty space.
+EXAMPLES
+	_printf("This is how you print an integer: %d\n", n);
+	expected output: 
+	This is how you print an integer: 4
+	(%d is replaced by the value of integer variable n)
 
-Currently, as of 3/20/2020, _printf can not print decimals, hex values, floats, or
-longs.
-_printf does not consider field width, precision, flags, or length modifiers.
+	_printf("This is a string\n");
+	expected output:
+	This is a string
+
+LIMITATIONS
+
+	Currently, as of 3/20/2020, _printf can not print decimals, hex values, floats, or
+	longs.
+	_printf does not consider field width, precision, flags, or length modifiers.
 
 
 BUGS
