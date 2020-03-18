@@ -64,3 +64,39 @@ int _putrot13(char c)
 		}
 	return (0);
 }
+/**
+ * find_binary - gets binary value of an unsigned int
+ * @n: an unsigned int
+ *
+ * Return: the number of characters printed
+ */
+int find_binary(unsigned int n)
+{
+	int index = 0;
+
+	if (n / 2 != 0)
+	{
+		find_binary(n / 2);
+
+	}
+	if (n % 2 == 0)
+	_putchar('0');
+	index++
+	else if (n % 2 != 0)
+	_putchar('1');
+	index++;
+	return (index);
+}
+/**
+ * print_binary - prints the binary value of a num
+ * @ap: an argument from a variadic argument list
+ *
+ * Return: the number of characters printed
+ */
+int print_binary(va_list ap)
+{
+	unsigned int n = va_arg(ap, int);
+
+	find_binary(n);
+	return (0);
+}
