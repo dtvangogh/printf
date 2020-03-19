@@ -132,7 +132,7 @@ int no_specifier(char after)
 	}
 	else
 	{
-		write(1, &empty, 1);
+		write(1, &after, 1);
 	}
 	return (0);
 }
