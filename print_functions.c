@@ -60,7 +60,6 @@ int print_integer(va_list ap)
 		count++;
 		n = -1 * n;
 		_printchar(n);
-		count++;
 	}
 	else
 
