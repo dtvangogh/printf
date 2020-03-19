@@ -132,6 +132,7 @@ int no_specifier(char after)
 	}
 	else
 	{
+		_putchar('%'); /*real printf does not print % */
 		write(1, &after, 1);
 	}
 	return (0);
