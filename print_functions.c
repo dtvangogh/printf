@@ -72,6 +72,10 @@ int print_integer(va_list ap)
 		n = n / 10;
 		count++;
 	}
+	if (n == 0)
+		{
+			count++;
+		}
 	return (count);
 }
 /**
